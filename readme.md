@@ -305,3 +305,167 @@
 - *muarabaru/views*:
   * Tambah `max_price` di `accept_transaction`
   * Langsung tutup lelang jika autobid
+
+---
+
+# 2022.8.5
+
+## TPI Online
+
+**Modified**
+- *lelang/models*: Tambah default di field `LelangIkan.last_bidding`
+- *lelang/serializer*: Tambah field `id` di `LelangPfxSerializer`
+- *lelang/urls*: Refaktor viewset `Lelang`
+- *lelang/views*: Update `list_pfx`
+- *tpi_online/settings*: Tambah CORS
+
+**New**
+- *lelang/migrations/0022_alter_lelangikan_last_bidding.py*
+
+## Perindo Lelang
+
+**Modified**
+- *main/store_models*: Tambah default di field `TpiOnline_LelangIkan.last_bidding`
+
+---
+
+# 2022.8.12
+
+## BNI API
+
+**Modified**
+- *BankAccountController*: Tambah sort dan filter OGP di `index`
+- *BniController*: Tambah `doPayment`
+- *BniService*: Tambah `doPayment`
+- *routes/api*: Tambah API `transfers`
+
+**New**
+- *TransferController*
+- *Transfer*
+- *2022_08_11_130400_create_transfers_table*
+
+## BNIX
+
+**Modified**
+- *router/index*: Tambah `Transfers`
+- *BniService*: Tambah sort & OGP di `getAccounts`, tambah `getTransfers`, `transfer`
+- *views/Accounts*:
+  * Tambah trailing comma
+  * Tambah sort & OGP di `getAccounts`
+- *views/Base*: Tambah navigasi `Transfers`
+
+**New**
+- *views/Transfers*
+
+---
+
+# 2022.8.16
+
+## fishOnServer
+
+**Modified**
+- *LogBook/serializer*: Tambah `required=False` di `FeedbackSerializer.lap_id`
+- *LogBook/views*: Tambah try except ketika get `PointLapan` by `lap_id`
+
+## FishOn
+
+**Modified**
+- *FishFinderApi*: cek `lap_id == null` di `getLimitedPoints`
+- *activity_dashboard*: Sembunyikan mode internet
+- *app/build.gradle*: Update versi 2.3.2
+
+---
+
+# 2022.8.19
+
+## Perindo Nelayan
+
+**Modified**
+- *DashboardActivity*: Update `setupBottomNav`
+- *BuyActivity*: Hapus bottom nav, update tampilan
+- *ProfilActivity*: Hilangkan bottom nav, update tampilan
+- *activity_buy*: Hilangkan bottom nav, update tampilan
+- *activity_buy_history*: Update warna spinner
+- *activity_profil*: Hilangkan bottom nav, update tampilan
+- *item_home_menu*: Kecilkan teks deskripsi
+- *layout_btm_nav*: Hilangkan Home dan Notifikasi, beri efek ripple
+- *order_list_item*: Update warna button plus minus
+- *strings*: Tambah deskripsi toko dan placeholder toko
+
+**New**
+- *ic_baseline_location_on_24*
+- *ic_baseline_store_24*
+- *layout_btm_nav_0*: Bottom nav lama
+
+---
+
+# 2022.8.22
+
+## Perindo Nelayan
+
+**Modified**
+- *FishFinderActivity*: Fix crash ketika back saat navigasi
+- *activity_fish_finder*: Refaktor back button
+- *LogBookNewActivity*: Update algoritma unggah Logbook
+- *FeedbackAdapter*: Update tampilan item Logbook
+- *item_logbook_new*: Update tampilan item Logbook
+- *strings*: Tambah string untuk Logbook
+- *FishSellActivity*: Tambah `initStoreList`, update tampilan
+- *BuyActivity*: Ubah `initStoreList` ke private, ubah warna teks Spinner
+- *activity_buy*: Update tampilan Spinner
+- *activity_fish_sell*: Update tampilan
+
+---
+
+# 2022.9.2
+
+## BNI API
+
+**Modified**
+- *AuthController*:
+  * Tambah ability di `createToken`
+  * Tambah method `user`
+- *Kernel*: Tambah middleware `abilities` & `ability`
+- *User*: Tambah relationship `role`
+- *routes/api*: Kelompokkan berdasarkan ability
+
+**New**
+- *Role*
+- *2022_09_01_103915_create_roles_table*
+- *2022_09_01_104449_add_role_to_users_table*
+
+## BNIX
+
+**Modified**
+- *services/BniService*: Tambah `getCurrentUser`
+- *views/Base*:
+  * Tambah prop `user` di `router-view`
+  * Tambah method `getCurrentUser`
+- *views/Login*: Hapus `localStorage` nama dan email di `submitLogin`
+- *views/Transfers*: Hilangkan tombol Transfer jika bukan `supe`
+
+---
+
+# 2022.9.12
+
+## TPI Online
+
+**Modified**
+- *User/models*: Tambah field `buy_area_code`
+- *lelang/views*: Filter lelang list dan home sesuai `buy_area_code`
+
+**New**
+- *0004_userprofile_buy_area_code*
+
+---
+
+# 2022.9.28
+
+## Coba Netrahub
+
+**Modified**
+- *coba_netrahub/settings*: Ubah database ke PostgreSQL
+- *db.sqlite3*: Hapus
+- *main/models*: Tambah `InboxMessage`, `OutboxMessage`
+- *main/serializers*: Tambah `OngoingSerializer`, `InboxSerializer`, `FromDevSerializer`, `ToDevSerializer`
+- *main/views*: Update dari hardcode ke database
