@@ -469,3 +469,18 @@
 - *main/models*: Tambah `InboxMessage`, `OutboxMessage`
 - *main/serializers*: Tambah `OngoingSerializer`, `InboxSerializer`, `FromDevSerializer`, `ToDevSerializer`
 - *main/views*: Update dari hardcode ke database
+
+---
+
+# 2022.9.30
+
+## FishOn
+
+**Modified**
+- *LogBookNewDetailActivity*: Tambah parameter status di message unggah logbook
+
+## fishOnServer
+
+**Modified**
+- *netra/utils*: Fix exception di fungsi `decrypt`
+
