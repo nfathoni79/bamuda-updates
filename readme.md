@@ -484,3 +484,28 @@
 **Modified**
 - *netra/utils*: Fix exception di fungsi `decrypt`
 
+---
+
+# 2022.10.28
+
+## Perindo Fishmart/Gerai
+
+**Modified**
+- *config/config*: Ubah versi aplikasi
+- *views/configs/manage*: Tambah margin atas
+- *views/home/office*: Tambah margin atas, ubah warna teks menu
+- *views/login*: Ubah title, favicon, logo, icon kode gerai, teks Sign In
+- *views/partial/header*: Ubah title, favicon, logo
+- *views/partial/header_sales*: Ubah logo
+- *bin/server.sh*: Ubah php ke versi 7.3
+- *public/css/style.css*: Tambah style navigasi office, `#required_fields_message`
+- *public/images/favicon.ico*: Ubah favicon
+
+**Deleted**
+- *public/images/fishMart-warna.png*
+- *public/images/fishMart-white.png*
+
+**New**
+- *public/images/perindo-gerai-white.png*
+- *public/images/perindo-gerai.png*
+- *public/images/store.png*: Icon login kode gerai
