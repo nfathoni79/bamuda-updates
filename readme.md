@@ -501,6 +501,7 @@
 - *bin/server.sh*: Ubah php ke versi 7.3
 - *public/css/style.css*: Tambah style navigasi office, `#required_fields_message`
 - *public/images/favicon.ico*: Ubah favicon
+- *public/index.php*: Muat file `.env` sebelum `config`
 
 **Deleted**
 - *public/images/fishMart-warna.png*
