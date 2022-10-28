@@ -491,7 +491,8 @@
 ## Perindo Fishmart/Gerai
 
 **Modified**
-- *config/config*: Ubah versi aplikasi
+- *config/config*: Ubah versi aplikasi, ubah `sess_save_path`
+- *config/database*: Fix `hostname`
 - *views/configs/manage*: Tambah margin atas
 - *views/home/office*: Tambah margin atas, ubah warna teks menu
 - *views/login*: Ubah title, favicon, logo, icon kode gerai, teks Sign In
