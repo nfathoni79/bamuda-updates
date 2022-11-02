@@ -511,3 +511,17 @@
 - *public/images/perindo-gerai-white.png*
 - *public/images/perindo-gerai.png*
 - *public/images/store.png*: Icon login kode gerai
+
+---
+
+# 2022.11.2
+
+## Perindo Fishmart/Gerai
+
+**Modified**
+- *controllers/Home*: Load model `Home_chart`, tambah fungsi `get_chart_data`
+- *views/home/home*: Update script `echarts`
+- *views/partial/footer*: Fix fungsi `numberWithCommas` jika `x == false`
+
+**New**
+- *models/Home_chart*: Model untuk mendapatkan data penjualan di home
