@@ -525,3 +525,16 @@
 
 **New**
 - *models/Home_chart*: Model untuk mendapatkan data penjualan di home
+
+---
+
+# 2022.11.21
+
+## E-TPI
+
+**Modified**
+- *main/store_models*:
+  * Update field `last_bidding`, `created_at` di `TpiOnline_LelangIkan`
+  * Tambah field `updated_at`, `max_bidding` di `TpiOnline_LelangIkan`
+  * Tambah field `max_price` di `Fishon_Ikan`
+- *trenggalek/views*: Reformat, update fungsi `accept_transaction`
