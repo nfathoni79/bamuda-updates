@@ -538,3 +538,12 @@
   * Tambah field `updated_at`, `max_bidding` di `TpiOnline_LelangIkan`
   * Tambah field `max_price` di `Fishon_Ikan`
 - *trenggalek/views*: Reformat, update fungsi `accept_transaction`
+
+---
+
+# 2022.11.23
+
+## TPI Online
+
+**Modified**
+- *lelang/lib*: Tambah nomor rekening operator dan fishon
