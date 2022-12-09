@@ -547,3 +547,11 @@
 
 **Modified**
 - *lelang/lib*: Tambah nomor rekening operator dan fishon
+
+---
+
+# 2022.12.9
+
+## Perindo Budidaya
+
+**New**
