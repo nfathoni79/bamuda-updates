@@ -555,3 +555,47 @@
 ## Perindo Budidaya
 
 **New**
+
+---
+
+# 2022.12.15
+
+## Rumah Karya ID
+
+**Modified**
+- *components/Contacts*:
+  * Hilangkan class dark
+  * Tambah `text-center` di `p`
+- *components/Hero*:
+  * Hilangkan class dark
+  * Tambah animasi di tombol Learn More dan gambar hero
+- *components/Intro*:
+  * Hilangkan class dark
+  * Ubah dekorasi teks
+  * Tambah animasi link
+- *components/Navbar*:
+  * Hilangkan class dark
+  * Tambah animasi di tombol dan menu
+  * Tambah prop `scrollDown` dan computed `transitionClasses`
+- *components/Partners*: Tambah filter dan animasi logo
+- *components/ProjectCard*:
+  * Hilangkan class dark
+  * Ubah tampilan card
+- *components/Projects*:
+  * Hilangkan class dark
+  * Tambah animasi di card dan tombol
+- *components/Services*:
+  * Hilangkan class dark
+  * Tambah animasi link
+  * Tambah prop `color` di data `services`
+- *data/projects*: Tukar `service` dan `task` di beberapa project
+- *App*:
+  * Update loading
+  * Tambah `z-10` di `header`
+  * Tambah data `oldScroll` dan `scrollDown`
+  * Update `handleScroll` untuk menentukan arah scroll
+- *index.html*: Tambah meta description
+- *tailwind.config.cjs*: Tambah animasi scale
+
+**New**
+- *components/ServiceItem*
