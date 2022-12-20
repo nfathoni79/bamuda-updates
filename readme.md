@@ -599,3 +599,13 @@
 
 **New**
 - *components/ServiceItem*
+
+---
+
+# 2022.12.20
+
+## Rumah Karya ID
+
+**Modified**
+- *components/Intro*: Ubah dekorasi teks
+- *components/ProjectCard*: Ubah tampilan client
