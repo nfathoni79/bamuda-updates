@@ -609,3 +609,12 @@
 **Modified**
 - *components/Intro*: Ubah dekorasi teks
 - *components/ProjectCard*: Ubah tampilan client
+
+---
+
+# 2022.12.26
+
+## Perindo Gerai
+
+**Modified**
+- *application/config/config*: Ubah `sess_match_ip` ke `FALSE` untuk mengatasi redirect ke halaman login
